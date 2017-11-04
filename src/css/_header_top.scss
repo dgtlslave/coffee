@@ -1,0 +1,78 @@
+
+
+.coffee {
+  border-bottom: 1px solid $color_yellow;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 99999;
+
+  &__box {
+    position: relative;
+
+    &-logo {
+      display: inline-block;
+      position: absolute;
+      top: 49px;
+      left: -191px;
+      width: 150px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    position: relative;
+
+    &::after {
+      content: '+38 (099) 66-11-730';
+      position: absolute;
+      top: 30px;
+      right: -347px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 27px;
+      font-weight: 700;
+      letter-spacing: -1.62px;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 97px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color, border-bottom, .3s;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        display: inline-block;
+        line-height: 97px;
+        color: $color_yellow;
+        border-bottom: 4px solid $color_yellow;
+      }
+    }
+
+    &:not(:first-child) {
+      // margin-left: 70px;
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 33px;
+    }
+  }
+}

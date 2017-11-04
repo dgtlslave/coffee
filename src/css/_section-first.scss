@@ -1,0 +1,101 @@
+.first {
+  background: url(../img/section-first-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+
+  &::after {
+    content: url(../img/mask-first-section.png);
+    font-size: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    // right: 50%;
+  }
+
+  &__layout {
+    position: relative;
+
+    &::after {
+      content: url(../img/mask-first-section.png);
+      position: absolute;
+      right: 50%;
+      transform: translateX(20%);
+      bottom: -80%;
+    }
+  }
+
+  &__stars {
+    width: 90px;
+  }
+
+  &__over-description {
+    padding-top: 261px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    position: relative;
+
+    &::before {
+      content: url(../img/image-left-arrow.png);
+      position: absolute;
+      top: 83%;
+      left: -183px;
+    }
+
+    &::after {
+      content: url(../img/image-right-arrow.png);
+      position: absolute;
+      top: 83%;
+      right: -183px;
+    }
+  }
+
+  &__title {
+    padding-top: 57px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3.64px;
+    position: relative;
+
+    &::before {
+      content: url(../img/image-star.png);
+      position: absolute;
+      bottom: 171px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      content: url(../img/image-double-arrow.png);
+      position: absolute;
+      top: 207px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--color {
+      color: $color_yellow;
+    }
+  }
+
+  &__sub-description {
+    padding-top: 60px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 50px;
+  }
+
+  &__button-box {
+    padding: 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
