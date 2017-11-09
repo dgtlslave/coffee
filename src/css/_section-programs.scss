@@ -2,5 +2,31 @@
 .programs {
   background: url(../img/bg-section-programs.jpg) center no-repeat;
   background-size: cover;
-  height: 500px;
+  position: relative;
+  overflow: hidden;
+
+  &__title--star {
+    position: relative;
+
+    &::before {
+      content: url(../img/image-black-star.png);
+      position: absolute;
+      top: 63%;
+      left: 32%;
+    }
+
+    &::after {
+      content: url(../img/image-black-star.png);
+      position: absolute;
+      top: 63%;
+      right: 32.5%;
+    }
+  }
+
+  &::after {
+    content: url(../img/q1.png);
+    position: absolute;
+    top: 61%;
+    right: -5%;
+  }
 }

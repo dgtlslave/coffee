@@ -1,0 +1,45 @@
+
+.gallery {
+  background: url(../img/bg-gallery-section-full.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+
+  &::after {
+    content: '';
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1%;
+    height: 151px;
+    background: url(../img/mask-first-bottom-section.png) center no-repeat;
+    background-size: cover;
+    // z-index: 99999999;
+  }
+
+  &__title--color {
+    color: $color_total_white;
+  }
+
+  &__title--padding {
+    padding-top: 160px;
+  }
+
+  &__title--stripe {
+
+  }
+
+  &__description--color {
+    color: $color_total_white;
+  }
+
+  &__description--width {
+    display: inline-block;
+    max-width: 394px;
+  }
+
+  &__description--bottom {
+    padding-bottom: 77px;
+  }
+}

@@ -2,34 +2,37 @@
   background: url(../img/section-first-bg.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
-  color: #fff;
+  color: $color_total_white;
   position: relative;
 
   &::after {
-    content: url(../img/mask-first-section.png);
+    content: '';
     font-size: 0;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 151px;
+    background: url(../img/mask-first-section.png) center no-repeat;
+    background-size: cover;
+    z-index: 10;
+    // width: 100%;
+    // left: 50%;
+    // transform: translateX(-50%);
     // right: 50%;
   }
 
-  &__layout {
-    position: relative;
-
-    &::after {
-      content: url(../img/mask-first-section.png);
-      position: absolute;
-      right: 50%;
-      transform: translateX(20%);
-      bottom: -80%;
-    }
-  }
-
-  &__stars {
-    width: 90px;
-  }
+  // &::before {
+  //   content: '';
+  //   font-size: 0;
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 50%;
+  //   height: 151px;
+  //   background: url(../img/mask-first-bottom-section.png) center no-repeat;
+  //   background-size: cover;
+  // }
 
   &__over-description {
     padding-top: 261px;
